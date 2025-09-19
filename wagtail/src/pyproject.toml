@@ -1,0 +1,12 @@
+[project]
+name = "src"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "django>=5.2,<5.3",
+    "django-cotton>=2.1.3",
+    "psycopg2-binary>=2.9.10",
+    "wagtail>=7.1,<7.2",
+]
