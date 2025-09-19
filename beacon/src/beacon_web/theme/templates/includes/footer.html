@@ -1,0 +1,18 @@
+    <footer>
+        {% for f in footermenus %}
+            <div>
+            <h4>{{ f.heading }}</h4>
+            <a href="{{ f.url }}">{{ f.menu_name }}</a>
+            </div>
+        {% endfor %}
+    </footer>
+    <script>
+        document.body.addEventListener("htmx:beforeRequest", (e) => {
+            console.log("➡️ HTMX Request:", e.detail.pathInfo.requestPath);
+        });
+        document.body.addEventListener("htmx:afterRequest", (e) => {
+            console.log("✅ HTMX Response received:", e.detail.xhr.responseURL);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% load static tailwind_tags wagtailcore_tags wagtailimages_tags cotton %}
+<!DOCTYPE html>
+<html lang="en" data-theme="mytheme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Beacon | {{ page.title }}</title>
+    <link rel="icon" type="image/svg+xml" href="/static/icons/beacon-logo.svg">
+    
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+
+    {% tailwind_css %}
+    
+
+</head>
+
+<body class="min-h-screen bg-white text-slate-800">
